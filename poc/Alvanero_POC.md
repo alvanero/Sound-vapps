@@ -41,6 +41,18 @@ Even though trading endpoints are not yet available in Soundness testnet, this p
    - On-chain `tx_hash`  
    - Timestamp and strategy metadata  
 
+   Example :
+
+   {
+  "pair": "SUI/USDC",
+  "side": "BUY",
+  "amount": "25",
+  "tx_hash": "0x123...",
+  "timestamp": "2025-09-07T03:20:00Z",
+  "strategy": "grid-v1"
+}
+
+
 3. **Walrus Storage**  
    Uploads the proof and returns a **`blob_id`** as a permanent reference.
 
@@ -66,6 +78,33 @@ Even though trading endpoints are not yet available in Soundness testnet, this p
 - **Auditability:** Users and investors can confirm the bot’s activity.  
 - **Composability:** Other DeFi projects can consume attestations as inputs.  
 - **Future-Ready:** Ready to be extended once Soundness enables direct trading features.
+
+---
+###👤 How Users Use It
+
+Configure Strategy:
+User provides parameters (pair, amount, thresholds).
+
+Run the Bot:
+Bot executes automatically (e.g., every X minutes).
+
+View Trade Records:
+Users open the dashboard/Discord to see:
+
+Each trade result
+
+Proof payloads
+
+Verified attestations
+
+Trust but Verify:
+Instead of trusting logs printed by the bot, users rely on attestations from Soundness Layer, which cannot be faked by the bot developer.
+
+✨ In short:
+
+For the trader → the bot gives automation.
+
+For the community → Soundness Layer gives verifiable transparency of each trade.
 
 ---
 
