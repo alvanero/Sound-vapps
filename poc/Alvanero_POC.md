@@ -42,16 +42,15 @@ Even though trading endpoints are not yet available in Soundness testnet, this p
    - Timestamp and strategy metadata  
 
    Example :
-
+   ```json
    {
-  "pair": "SUI/USDC",
-  "side": "BUY",
-  "amount": "25",
-  "tx_hash": "0x123...",
-  "timestamp": "2025-09-07T03:20:00Z",
-  "strategy": "grid-v1"
-}
-
+     "pair": "SUI/USDC",
+     "side": "BUY",
+     "amount": "25",
+     "tx_hash": "0x123...",
+     "timestamp": "2025-09-07T03:20:00Z",
+     "strategy": "grid-v1"
+   }
 
 3. **Walrus Storage**  
    Uploads the proof and returns a **`blob_id`** as a permanent reference.
