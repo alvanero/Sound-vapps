@@ -80,31 +80,32 @@ Even though trading endpoints are not yet available in Soundness testnet, this p
 - **Future-Ready:** Ready to be extended once Soundness enables direct trading features.
 
 ---
-###👤 How Users Use It
+## 👤 How Users Use It
 
-Configure Strategy:
-User provides parameters (pair, amount, thresholds).
+### 1. Configure Strategy
+The user provides parameters such as:
+- Trading pair (e.g., USDC/SUI)  
+- Trade amount  
+- Thresholds for execution  
 
-Run the Bot:
-Bot executes automatically (e.g., every X minutes).
+### 2. Run the Bot
+The bot executes automatically based on the configured strategy (e.g., every X minutes).
 
-View Trade Records:
-Users open the dashboard/Discord to see:
+### 3. View Trade Records
+Users can open the dashboard or Discord bot to see:
+- Each trade result  
+- Proof payloads  
+- Verified attestations  
 
-Each trade result
+### 4. Trust but Verify
+Instead of trusting logs printed by the bot, users rely on **attestations from Soundness Layer**, which cannot be faked by the bot developer.
 
-Proof payloads
+---
 
-Verified attestations
+✨ **In short:**  
+- **For the trader** → the bot provides automation.  
+- **For the community** → Soundness Layer provides verifiable transparency of each trade.
 
-Trust but Verify:
-Instead of trusting logs printed by the bot, users rely on attestations from Soundness Layer, which cannot be faked by the bot developer.
-
-✨ In short:
-
-For the trader → the bot gives automation.
-
-For the community → Soundness Layer gives verifiable transparency of each trade.
 
 ---
 
